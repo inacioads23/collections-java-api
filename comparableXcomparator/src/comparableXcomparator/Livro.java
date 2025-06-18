@@ -1,8 +1,8 @@
-package main.java.comparableXcomparator;
+package comparableXcomparator;
 
 import java.util.Comparator;
 
-// Uma classe 'Livro' que implementa Comparable
+//Uma classe 'Livro' que implementa Comparable
 class Livro implements Comparable<Livro> {
 	private String titulo;
 	private String autor;
@@ -34,7 +34,7 @@ class Livro implements Comparable<Livro> {
 	}
 }
 
-// Classe para comparar Livro por autor
+//Classe para comparar Livro por autor
 class CompararAutor implements Comparator<Livro> {
 	@Override
 	public int compare(Livro l1, Livro l2) {
@@ -42,7 +42,7 @@ class CompararAutor implements Comparator<Livro> {
 	}
 }
 
-// Classe para comparar Livro por ano
+//Classe para comparar Livro por ano
 class CompararAno implements Comparator<Livro> {
 	@Override
 	public int compare(Livro l1, Livro l2) {

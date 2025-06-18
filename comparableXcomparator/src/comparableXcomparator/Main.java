@@ -1,4 +1,4 @@
-package main.java.comparableXcomparator;
+package comparableXcomparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,6 +7,11 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("---------------------------------------");
 		ArrayList<Livro> livros = new ArrayList<Livro>() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
 			{
 				add(new Livro("Java - Guia do Programador: Atualizado Para Java 16", "Peter Jandl Junior", 2021));
 				add(new Livro("Desenvolvimento Real de Software: Um guia de projetos para fundamentos em Java",

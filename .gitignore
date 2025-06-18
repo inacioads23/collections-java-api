@@ -199,3 +199,9 @@ README.html
 *.iml
 .idea
 .exercism
+
+### Others ###
+genericsProf/
+listProf/
+mapProf/
+setProf/

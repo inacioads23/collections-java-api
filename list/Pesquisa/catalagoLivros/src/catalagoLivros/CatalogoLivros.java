@@ -20,7 +20,7 @@ public class CatalogoLivros {
 	}
 
 	public List<Livro> pesquisarPorAutor(String autor) {
-		List<Livro> livrosPorAutor = new ArrayList<Livro>();
+		List<Livro> livrosPorAutor = new ArrayList<>();
 
 		if (!livroList.isEmpty()) {
 			for (Livro l : livroList) {
@@ -36,7 +36,7 @@ public class CatalogoLivros {
 	}
 
 	public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
-		List<Livro> livrosPorIntervalAno = new ArrayList<Livro>();
+		List<Livro> livrosPorIntervalAno = new ArrayList<>();
 
 		if (!livroList.isEmpty()) {
 			for (Livro l : livroList) {

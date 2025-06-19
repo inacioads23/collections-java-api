@@ -8,11 +8,15 @@ public class CarrinhoDeCompras {
 	private List<Item> itemList;
 
 	public CarrinhoDeCompras() {
-		this.itemList = new ArrayList<Item>();
+		this.itemList = new ArrayList<>();
 	}
 
 	public void adicionarItem(String nome, double preco, int quantidade) {
-		itemList.add(new Item(nome, preco, quantidade)); // adiciona na lista um novo item
+		Item item = new Item(nome, preco, quantidade);
+		itemList.add(item); // adiciona na lista um novo item
+		
+		// outra opção:
+		//itemList.add(new Item(nome, preco, quantidade));
 	}
 
 	public void removerItem(String nome) {

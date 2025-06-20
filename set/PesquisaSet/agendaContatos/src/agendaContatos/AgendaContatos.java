@@ -42,8 +42,7 @@ public class AgendaContatos {
 	}
 	
 	public Contato atualizarNumeroContato(String nome, int novoNumero) {
-		Contato contatoAtualizado = null;
-		
+		Contato contatoAtualizado = null;		
 		
 		for(Contato c : contatoSet) {
 			if(c.getNome().equalsIgnoreCase(nome)) {

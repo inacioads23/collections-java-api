@@ -44,8 +44,6 @@ public class CatalogoLivros {
 					livrosPorIntervalAno.add(l);
 				}
 			}
-		} else {
-			System.out.println("A lista está vazia");
 		}
 
 		return livrosPorIntervalAno;
@@ -62,8 +60,6 @@ public class CatalogoLivros {
 				break; // se achou livro não precisa prosseguir
 				}
 			}
-		} else {
-			System.out.println("A lista está vazia");
 		}
 
 		return livrosPorTitulo;

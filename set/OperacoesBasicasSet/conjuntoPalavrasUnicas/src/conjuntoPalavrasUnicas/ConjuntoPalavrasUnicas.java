@@ -4,22 +4,22 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ConjuntoPalavrasUnicas {	
-	private Set<String> conjPalavrasUnicas;
+	private Set<String> setPalavrasUnicas;
 	
 	public ConjuntoPalavrasUnicas() {
-		this.conjPalavrasUnicas = new HashSet<String>();
+		this.setPalavrasUnicas = new HashSet<String>();
 	}
 	
 	// Adiciona uma palavra ao conjunto
 	public void adicionarPalavra(String palavra) {
-		conjPalavrasUnicas.add(palavra);
+		setPalavrasUnicas.add(palavra);
 	}
 	
 	// Remove uma palavra do conjunto
 	public void removerPalavra(String palavra) {
-		if(!conjPalavrasUnicas.isEmpty()) {
-			if(conjPalavrasUnicas.contains(palavra)) {
-				conjPalavrasUnicas.remove(palavra);
+		if(!setPalavrasUnicas.isEmpty()) {
+			if(setPalavrasUnicas.contains(palavra)) {
+				setPalavrasUnicas.remove(palavra);
 			}else {
 				System.out.println("Palavra não encontrada");
 			}
@@ -30,12 +30,12 @@ public class ConjuntoPalavrasUnicas {
 	
 	// Verifica se uma palavra está presente no conjunto
 	public boolean verificarPalavra(String palavra) {
-		return conjPalavrasUnicas.contains(palavra);		
+		return setPalavrasUnicas.contains(palavra);		
 	}
 	
 	public void exibirPalavrasUnicas() {
-		if(!conjPalavrasUnicas.isEmpty()) {
-			System.out.println("Conjunto de palavras" + conjPalavrasUnicas);
+		if(!setPalavrasUnicas.isEmpty()) {
+			System.out.println("Conjunto de palavras" + setPalavrasUnicas);
 		}else {
 			System.out.println("Sem dados");
 		}

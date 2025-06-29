@@ -43,7 +43,7 @@ public class Pessoa implements Comparable<Pessoa>{
 }
 
 // Criei nova classe
-// COMPARABLE - compara idade
+// COMPARATOR - compara por altura
 class ComparatorPorAltura implements Comparator<Pessoa>{
 
 	@Override
